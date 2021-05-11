@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/maincontainer"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:padding="5dp"  android:layout_weight="1">
+
+    <TextView
+        android:layout_marginTop="20px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#E5110E"
+        android:textSize="40px"
+        android:padding="35px"
+        android:id="@+id/general"
+        android:text="General" />
+
+
+    <EditText
+        android:layout_marginTop="20px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/nombre"
+        app:backgroundTint="#E5110E"
+        android:hint="Lola                                                " />
+
+    <EditText
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20px"
+        android:id="@+id/raza"
+        android:layout_below="@id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Bull Dog                                         " />
+
+
+    <TextView
+        android:layout_marginTop="20px"
+        android:layout_below="@id/raza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#E5110E"
+        android:textSize="40px"
+        android:padding="35px"
+        android:id="@+id/genero"
+        android:text="Género" />
+
+    <Spinner
+        android:layout_marginTop="55px"
+        android:layout_marginRight="90px"
+        android:layout_below="@+id/raza"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:id="@+id/options"
+        android:layout_height="wrap_content">
+    </Spinner>
+
+    <TextView
+        android:layout_marginTop="20px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40px"
+        android:layout_below="@+id/genero"
+        android:padding="35px"
+        android:textColor="#E5110E"
+        android:id="@+id/constitucion"
+        android:text="Constitution" />
+
+    <EditText
+        android:id="@+id/peso"
+        android:layout_marginTop="20px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/options"
+        android:layout_toLeftOf="@+id/kg"
+        android:hint="13.5                                        " />
+
+    <TextView
+        android:layout_marginTop="20px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/options"
+        android:textSize="50px"
+        android:padding="35px"
+        android:id="@+id/kg"
+        android:text="Kg" />
+
+</RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent" android:padding="5dp"  android:layout_weight="1">
+    <Button
+        android:id="@+id/botonEliminar"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#E5110E"
+        android:text="Guardar"
+        android:textColor="@color/white"
+        app:backgroundTint="#E5110E"
+        app:iconTint="#000000" />
+
+    </RelativeLayout>
+
+</LinearLayout>

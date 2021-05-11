@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/maincontainer"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:padding="5dp"  android:layout_weight="1">
+
+    <TextView
+        android:layout_marginTop="20px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#E5110E"
+        android:textSize="40px"
+        android:padding="35px"
+        android:id="@+id/general"
+        android:text="General" />
+
+
+    <EditText
+        android:layout_marginTop="20px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/nombreAlta"
+        app:backgroundTint="#E5110E"
+        android:hint="Nombre                                         " />
+
+    <EditText
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20px"
+        android:id="@+id/razaAlta"
+        android:layout_below="@id/nombreAlta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Raza                                              " />
+
+
+
+    <TextView
+        android:layout_marginTop="20px"
+        android:layout_below="@id/razaAlta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#E5110E"
+        android:textSize="40px"
+        android:padding="35px"
+        android:id="@+id/generoAlta"
+        android:text="Género" />
+
+    <Spinner
+        android:layout_marginTop="55px"
+        android:layout_marginRight="90px"
+        android:layout_below="@+id/razaAlta"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:id="@+id/optionsAlta"
+        android:layout_height="wrap_content">
+    </Spinner>
+
+    <TextView
+        android:layout_marginTop="20px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40px"
+        android:layout_below="@+id/generoAlta"
+        android:padding="35px"
+        android:textColor="#E5110E"
+        android:id="@+id/constitucion"
+        android:text="Constitution" />
+
+    <EditText
+        android:id="@+id/pesoAlta"
+        android:layout_marginTop="20px"
+        android:layout_width="wrap_content"
+        android:inputType="number"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/optionsAlta"
+        android:layout_toLeftOf="@+id/kgAlta"
+        android:hint="Peso                                      " />
+
+    <TextView
+        android:layout_marginTop="20px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/optionsAlta"
+        android:textSize="50px"
+        android:padding="35px"
+        android:id="@+id/kgAlta"
+        android:text="Kg" />
+
+</RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent" android:padding="5dp"  android:layout_weight="1">
+    <Button
+        android:id="@+id/botonAlta"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#E5110E"
+        android:text="Crear"
+        android:textColor="@color/white"
+        app:backgroundTint="#E5110E"
+        app:iconTint="#000000" />
+
+    </RelativeLayout>
+
+</LinearLayout>

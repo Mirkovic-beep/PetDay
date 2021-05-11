@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:padding="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:paddingLeft="20px"
+        android:paddingTop="20px"
+        android:textSize="70px"
+        android:textColor="@color/black"
+        android:paddingBottom="20px"
+        android:layout_height="wrap_content"
+        android:id="@+id/Nombre"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:paddingTop="20px"
+        android:textSize="50px"
+        android:paddingLeft="20px"
+        android:textColor="#C5C1C0"
+        android:paddingBottom="20px"
+        android:layout_below="@+id/Nombre"
+        android:layout_height="wrap_content"
+        android:id="@+id/Raza"/>
+
+</RelativeLayout>

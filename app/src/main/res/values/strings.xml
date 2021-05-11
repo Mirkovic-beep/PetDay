@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PetDay</string>
+
+    <string-array name="options">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Model T.34 Soviet Tank</item>
+
+    </string-array>
+</resources>
