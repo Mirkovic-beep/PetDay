@@ -19,19 +19,18 @@ public class infopet extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.infopet);
-        Spinner options = findViewById(R.id.options);
-
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.options, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        options.setAdapter(adapter);
-        
-        String optionText = options.getSelectedItem().toString();
-        int spinnerPosition = adapter.getPosition(optionText);
-        options.setSelection(spinnerPosition);
-
 
         Bundle receivedObject = getIntent().getExtras();
         Pet receivedPet = (Pet)receivedObject.getSerializable("pet");
+
+        Spinner options = findViewById(R.id.options);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.options, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        options.setAdapter(adapter);
+
+        String optionText = receivedPet.getGenero();
+        int spinnerPosition = adapter.getPosition(optionText);
+        options.setSelection(spinnerPosition);
 
         EditText nombre = findViewById(R.id.nombre);
         EditText raza = findViewById(R.id.raza);
